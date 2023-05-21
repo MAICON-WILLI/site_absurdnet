@@ -78,6 +78,29 @@
   transition: 0.3s;
 }
 
+.bg-btn-primary-custom {
+  clip-path: polygon(13% 0, 100% 0, 100% 50%, 88% 100%, 0 100%, 0 50%);
+  background-color: var(--cl-primary);
+  padding: 1px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.btn-primary-custom {
+  clip-path: polygon(13% 0, 100% 0, 100% 50%, 88% 100%, 0 100%, 0 50%);
+  background-color: var(--cl-blue-dark);
+  width: 100%;
+  color: var(--cl-primary);
+  font-family: var(--font-title) !important;
+  transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--cl-primary);
+  color: var(--cl-white);
+  transition: 0.3s;
+}
+
 .btn-s {
   font-size: var(--tp-s);
   font-family: var(--font-text);
