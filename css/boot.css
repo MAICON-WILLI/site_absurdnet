@@ -1,4 +1,152 @@
+@font-face {
+  font-family: glitch;
+  src: url(../assets/fonts/Glitch.otf);
+}
+
 :root {
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-112: 112px;
+  --spacing-128: 128px;
+  --spacing-164: 164px;
+  --spacing-200: 200px;
+
   --cl-primary: #c10d81;
-  --tp-xxs: 45.7px;
+  --cl-secundary: #34107e;
+  --cl-terciary: #1b0840;
+  --cl-blue-dark: #080213;
+  --cl-white: #fff;
+  --cl-gray-80: #ccc;
+  --cl-gray-60: #999;
+  --cl-gray-20: #333;
+
+  --tp-xxs: 12px;
+  --tp-xs: 15px;
+  --tp-s: 18.7px;
+  --tp-m: 23.4px;
+  --tp-l: 29.3px;
+  --tp-xl: 36.6px;
+  --tp-xxl: 45.7px;
+
+  --font-title: glitch;
+  --font-text: "Montserrat", sans-serif;
+
+  --shadow-btn-primary: 0px 0px 20px var(--cl-primary);
+  --shadow-btn-white: 0px 0px 20px var(--cl-white);
+}
+
+.btn-primary {
+  border: 1px solid var(--cl-primary);
+  color: var(--cl-primary);
+  border-radius: 0;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--cl-primary);
+  color: var(--cl-blue-dark);
+  box-shadow: var(--shadow-btn-primary);
+  transition: 0.3s;
+}
+
+.btn-white {
+  border: 1px solid var(--cl-white);
+  color: var(--cl-white);
+  border-radius: 0;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.btn-white:hover {
+  background-color: var(--cl-white);
+  color: var(--cl-blue-dark);
+  box-shadow: var(--shadow-btn-white);
+  transition: 0.3s;
+}
+
+.btn-s {
+  font-size: var(--tp-s);
+  font-family: var(--font-text);
+  padding: var(--spacing-12) var(--spacing-28);
+}
+
+.btn-m {
+  font-size: var(--tp-m);
+  font-family: var(--font-text);
+  padding: var(--spacing-16) var(--spacing-36);
+}
+
+.btn-l {
+  font-size: var(--tp-xl);
+  font-family: var(--font-text);
+  padding: var(--spacing-16) var(--spacing-48);
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-20);
+}
+
+h1 {
+  font-size: var(--tp-xxl);
+  font-family: var(--font-title);
+}
+
+h2 {
+  font-size: var(--tp-xl);
+  font-family: var(--font-title);
+}
+
+p {
+  font-size: var(--tp-s);
+  font-family: var(--font-text);
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@keyframes an-pattern {
+  0%,
+  100% {
+    fill: var(--cl-secundary);
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0.1;
+  }
+
+  40% {
+    fill: var(--cl-primary);
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 1;
+    fill: var(--cl-secundary);
+  }
+
+  80% {
+    opacity: 1;
+    fill: var(--cl-secundary);
+  }
 }
