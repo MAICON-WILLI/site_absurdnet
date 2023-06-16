@@ -173,3 +173,7 @@ a {
     fill: var(--cl-secundary);
   }
 }
+
+.pattern {
+  animation: an-pattern 5s infinite linear;
+}
